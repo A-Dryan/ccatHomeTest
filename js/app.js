@@ -7,6 +7,6 @@ function changeImg(){
         "https://covertalavera.com/wp-content/uploads/2021/02/office-381228_1920.jpg",
         "https://www.iberopuebla.mx/sites/default/files/slidp/img-bg/00_img_d._inteligencia_empresarial_copy.jpg"
     ];
-    const portada = document.querySelector(".container-portada");
+    portada = document.querySelector(".container-portada");
     portada.style.backgroundImage=`url(${arrayImg[1]})`;
 };
