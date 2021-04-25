@@ -8,5 +8,5 @@ function changeImg(){
         "https://www.iberopuebla.mx/sites/default/files/slidp/img-bg/00_img_d._inteligencia_empresarial_copy.jpg"
     ];
     const portada = document.querySelector(".container-portada");
-    portada.style.backgroundImage=`url(${arrayImg[0]})`;
+    portada.style.backgroundImage=`url(${arrayImg[1]})`;
 };
