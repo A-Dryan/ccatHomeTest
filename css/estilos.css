@@ -7,9 +7,11 @@ font-family: 'Sarabun', sans-serif;
 height: 10vh;
 display: flex;
 justify-content:space-between;
+position: relative;
 align-items: center;
 background: #fff;
 font-weight: bold;
+box-shadow: 0vh .2vh rgba(49, 49, 49, 0.747);
 }
 
 .container-menu img{
@@ -47,12 +49,18 @@ height: 100%;
 
 .container-portada{
     width: 100%;
-    height:70vh;
-   transition: .25s ease-in;
-    background-image: url(https://i.pinimg.com/originals/07/08/17/070817e1cc30dcb7b6c37951ca43cbf1.jpg);
+    height:90vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    display: flex;
+}
+.container-portada__slide{
+    width: 100vw;
+    height:100vh;
     background-position: center;
-    background-attachment: fixed;
-    background-size: none;
+    background-size: cover;
+    scroll-snap-align: center;
 }
 
 .container-txt{
