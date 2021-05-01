@@ -74,16 +74,20 @@ height: 100%;
 .control-bottom__page{
     background-color: rgba(82, 158, 224, .5);
     border-radius: 50%;
-    width: 4vh;
-    height: 4vh;
+    width: 3.5vh;
+    height: 3.5vh;
     margin: 1vh;
     text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: rgba(82, 158, 224, .5);
 }
-
+.control-bottom__page:focus{
+    background-color: rgba(18, 141, 248, 0.685);
+}
+.control-bottom__page:required{
+    background-color: rgba(18, 141, 248, 0.685);
+}
 .boton-control{
     width: 5vh;
 }

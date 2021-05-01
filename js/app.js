@@ -16,6 +16,7 @@ const app = new Vue({
 },
     methods: {
         moveSlider(n){
+            n= n-1;
             this.slider.scrollTo({
                 left: this.width*n,
                 behavior: 'smooth'
