@@ -21,8 +21,15 @@
         </ul>
     </div>
     <div id="app">
-        <div class="container-portada" >
+        <div class="container-portada" ref="sliderref" >
            <slider v-for="(slide, index) in slidesof" v-bind:key="index" v-bind:urlimg="slide.imgurl"></slider>
+           <div class="container-portada__slide-control control-middle">
+               <a href="#"><img class="boton-control" src="img/back.png"></a>
+               <a href="#"><img class="boton-control" src="img/next.png"></a>
+            </div>
+            <div class="container-portada__slide-control control-bottom">
+                <a class="control-bottom__page" @click="moveSlider(n)" href="#" v-for="n in slidesof.length" :key="n">{{n}}</a>
+            </div>
         </div>
     </div>
     <div class="container-txt">
