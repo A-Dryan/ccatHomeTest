@@ -3,6 +3,8 @@ const app = new Vue({
     mounted(){
         this.slider = this.$refs.sliderref;
         this.width = this.slider.offsetWidth;  
+
+        
       },
     data:{
     slidesof:[    
@@ -20,8 +22,8 @@ const app = new Vue({
             this.slider.scrollTo({
                 left: this.width*n,
                 behavior: 'smooth'
-            })
-        }
+            });
+        },
     }
 
 });
