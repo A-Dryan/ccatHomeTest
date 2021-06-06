@@ -28,3 +28,15 @@ const app = new Vue({
 
 });
 
+var app2 = new Vue({
+    el: '#app-2',
+    data:{
+        datasponsor:[
+            {urlsponsor: '#' , logosponsor: 'https://media.glassdoor.com/sqll/295855/alicorp-squarelogo-1540813111809.png'},
+            {urlsponsor: '#' , logosponsor: 'https://media-exp1.licdn.com/dms/image/C4D0BAQGcuhMQLScH8g/company-logo_200_200/0/1584847728945?e=2159024400&v=beta&t=gi0qEf0JkSqvaqqAd-qDJypOTrm43lLGW-Jx5S_T3f4'},
+            {urlsponsor: '#' , logosponsor: 'https://image.flaticon.com/icons/png/512/25/25231.png'},
+            {urlsponsor: '#' , logosponsor: 'https://pngimg.com/uploads/amazon/amazon_PNG22.png'}
+        ]
+    }
+})
+

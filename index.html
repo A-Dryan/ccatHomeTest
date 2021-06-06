@@ -33,8 +33,12 @@
         <div class="container-txt">
             El Centro Cultural Avanzada Tecnológica (CCAT) es una organización de estudiantes y egresados fundada en la Facultad de Ingeniería Industrial y de Sistemas de la Universidad Nacional de Ingeniería, el 22 de mayo de 1991, como una iniciativa estudiantil cuya motivación especial es emprender el reto de complementar la formación empresarial, académica, cultural y humana de los futuros profesionales para lograr con ellos la construcción de una mejor sociedad. 
         </div>
-        <div id="app2">
-
+        <div id="app-2">
+            <div class="container-slider__sponsor">
+                <a @click="moveSliderS(-1)" href="#"><img src="img/back_s.png"></a>
+                <slider-sponsors v-for="(data, index) in datasponsor" :urlsponsor="data.urlsponsor" :logosponsor="data.logosponsor"></slider-sponsors>
+                <a @click="moveSliderS(1)" href="#"><img src="img/next_s.png"></a>
+            </div>
         </div>
     </div>
     <div class="container-footer">
@@ -57,7 +61,7 @@
     
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="components/slider.js"></script>
+    <script src="components/slider-sponsors.js"></script>
     <script src="js/app.js"></script>
-    <script src="js/app2.js"></script>
 </body>
 </html>
