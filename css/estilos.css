@@ -125,11 +125,14 @@ height: 100%;
 
 .container-slider__sponsor{
     display: flex;
-    padding: 0vw 3vh;
+    padding: .2vw 3vh;
     justify-content: space-between;
+    align-items: center;
 }
 .slide-sponsor a img{
 width: 7.5vh;
+border: 2px solid rgba(221, 221, 221, 0.267);
+padding: 5px;
 }
 .container-slider__sponsor img{
     width: 3vh;
